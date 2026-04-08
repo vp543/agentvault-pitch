@@ -1,10 +1,10 @@
-# AgentVault — Slide-by-Slide Speaker Notes
+# AgentVault — Slide-by-Slide Speaker Notes (Consumer Reframe)
 
 ---
 
 ## Slide 1: Title Slide
 
-**Visual**: AgentVault logo, tagline "The trust layer for the AI agent era."
+**Visual**: AgentVault logo, tagline "The Trust Layer for the AI Agent Era."
 
 **Say**: Nothing — let the slide sit for 2 seconds while you make eye contact with the room. Then launch into the hook.
 
@@ -12,95 +12,132 @@
 
 ---
 
-## Slide 2: The Hook
+## Slide 2: The Problem
 
-**Visual**: Screenshot of Claude Code with terminal access, highlighted file paths showing `.ssh/`, Chrome password DB, `~/.aws/credentials`.
+**Visual**: Four stat cards in a row — 28.6M secrets exposed, 81% surge in AI credential leaks, 88% of orgs had incidents, 8 min from exposure to exploitation.
 
-**Say**: "Right now, Claude Code can read every password saved in my Chrome browser. It can access my SSH keys, my AWS credentials, my tax returns. And I gave it permission without thinking twice."
+**Say**: "Your AI assistant already has access to everything. You just haven't noticed yet. 28.6 million secrets were exposed on GitHub last year alone. AI credential leaks surged 81%. And once a secret is exposed, attackers exploit it in eight minutes."
 
-**Key point**: This is not hypothetical. This is what everyone in this room is already doing.
+**Key point**: This is not hypothetical. This is happening at massive scale right now.
 
-**Transition**: "And this is not just a Claude problem."
+**Transition**: "Let me make this personal."
 
 ---
 
-## Slide 3: The Problem
+## Slide 3: The Scenario
 
-**Visual**: Logos of Claude Code, Copilot, Devin, Manus in a row. Below them: a graphic showing "FULL SYSTEM ACCESS" with no barriers. Stats on agent adoption growth.
+**Visual**: Pulsing red-bordered box with sequential reveal of the ChatGPT vacation booking scenario.
 
-**Say**: "AI agents are no longer chatbots. They run on your machine with your permissions. And there is zero security layer between them and your most sensitive data. You either give full access or you don't use the tool."
+**Say**: "You asked ChatGPT to plan your vacation. It offered to book the flights. It needs your credit card, airline login, passport number — and you handed it all over. You just gave an AI the keys to your financial life."
 
-**Key points**: No access controls, no expiration, no audit trail. Wild west of permissions.
+**Key point**: This is the default for every person using AI assistants today.
+
+**Transition**: "And this is not just a ChatGPT problem."
+
+---
+
+## Slide 4: Why This Is Needed
+
+**Visual**: Three cards showing the core problems — All-or-Nothing Access, Zero Visibility, Permanent Permissions. Shadow AI breach cost callout at bottom.
+
+**Say**: "AI assistants are autonomous co-workers — but the security model hasn't caught up. You either give full access or nothing. There's no audit trail. And once you grant permission, it never expires. Shadow AI breaches cost $4.63 million per incident on average."
+
+**Key points**: No access controls, no visibility, no expiration. The cost is real.
 
 **Transition**: "We built the solution."
 
 ---
 
-## Slide 4: The Solution — AgentVault
+## Slide 5: The Solution — AgentVault
 
-**Visual**: Clean product diagram — User's secrets flow into AgentVault, agents request access via API, receive scoped OTP tokens. Show the three pillars: Temporary Access, Permission Scoping, Audit Logs.
+**Visual**: Three pillars — Rotating OTP Access, Permission Scoping, Full Audit Trail. Tagline: "Face ID for your AI."
 
-**Say**: "AgentVault sits between your sensitive data and AI agents. Agents request access through our layer, receive temporary OTP tokens scoped to exactly what they need, and every interaction is logged. Think 1Password meets OAuth, built for AI agents."
+**Say**: "AgentVault is the consumer privacy layer between you and every AI assistant. Temporary keys that expire every 60 seconds. Scoped permissions so each assistant only sees what it needs. And a full audit trail of every access, timestamped and exportable."
 
-**Key points**: OTP-based, auto-expiring, scoped permissions, full audit trail.
+**Key points**: Face ID for your AI. You stay in control. The assistant gets what it needs. Nothing more.
+
+**Transition**: "Here is how it works."
+
+---
+
+## Slide 6: How It Works
+
+**Visual**: Four-step flow — Store Secrets, Assistant Requests, Scoped Access, Auto-Expire & Log. Arrows between each step.
+
+**Say**: "You store your passwords, cards, and documents in your encrypted vault. When your AI assistant needs something, it asks AgentVault. You get a push notification. The assistant gets a temporary token for only the specific secret it needs, and it expires in 60 seconds. Every interaction is recorded in a tamper-proof log."
+
+**Key points**: Compatible with ChatGPT, Claude, Gemini, Copilot, Siri, and every major AI assistant.
 
 **Transition**: "And the timing could not be better."
 
 ---
 
-## Slide 5: Why Now — Feasibility vs. Value Matrix
+## Slide 7: Why Now
 
-**Visual**: 2x2 matrix with AgentVault in the top-right quadrant (high feasibility, high value). Show that OTP, vault, and API middleware tech all exist already. Show that no competitor addresses consumer AI agent security.
+**Visual**: Four cards — Consumer AI Explosion, Regulatory Pressure, Enterprise Adoption, White Space.
 
-**Say**: "Every technology we need already exists — OTPs, encrypted vaults, API middleware. What does not exist is anyone combining them for the AI agent use case. High feasibility, high value, and a wide-open market."
+**Say**: "ChatGPT has 500 million weekly active users. Apple Intelligence is shipping on every new iPhone. Gemini is embedded in Gmail. The EU AI Act takes effect August 2026. And no consumer product combines OTP, scoping, and audit for AI assistants. The window is open right now."
 
-**Key points**: Not inventing new tech. Assembling proven components for an unsolved problem.
+**Key points**: Massive consumer AI adoption, regulatory deadlines creating urgency, and a wide-open competitive landscape.
+
+**Transition**: "Here is the market."
+
+---
+
+## Slide 8: Market Opportunity
+
+**Visual**: Three concentric circles — TAM ($52.6B), SAM ($4.3B), SOM ($300M).
+
+**Say**: "The AI agent market hits $52.6 billion by 2030. Our serviceable market in consumer and enterprise AI privacy is $4.3 billion. And our initial target — consumer early adopters — represents a $300 million opportunity."
+
+**Key points**: Massive TAM with clear path from consumer early adopters to enterprise expansion.
 
 **Transition**: "Here is how we make money."
 
 ---
 
-## Slide 6: Business Model
+## Slide 9: Business Model
 
-**Visual**: Two-tier pricing graphic. Free tier: 25 secrets, basic logs. Pro ($9/mo): unlimited secrets, advanced audit. Enterprise ($49/seat/mo): compliance, governance, SSO.
+**Visual**: Three-tier pricing — Free ($0), Pro ($5/mo), Enterprise ($49/seat/mo). "Land with consumers. Expand to enterprise."
 
-**Say**: "Freemium gets developers in the door. Pro converts power users. Enterprise is the growth engine — companies deploying AI agents internally need compliance and access governance, and they will pay for it."
+**Say**: "Freemium gets consumers in the door with 25 stored secrets. Pro at $5 a month adds unlimited secrets, family sharing for up to 5 people, and advanced audit logs. Enterprise at $49 per seat gives companies SSO, compliance reporting, and dedicated SLA."
 
-**Key points**: Land with developers, expand into enterprise. Enterprise is where the real revenue lives.
+**Key points**: Land with consumers, expand into the workplace. Enterprise is the growth engine.
 
 **Transition**: "And once we are in, we are very hard to displace."
 
 ---
 
-## Slide 7: Defensibility and Moat
+## Slide 10: Defensibility
 
-**Visual**: Flywheel diagram — More agents integrate, more trust data generated, better trust scores, more users adopt, more agents integrate. Data moat callout.
+**Visual**: Feasibility vs. Value matrix (Weekend 1 Framework) on the left with AgentVault in the top-right quadrant. Three moats on the right — Trust Data Network Effects, Agent Integration Ecosystem, Compliance Certifications.
 
-**Say**: "Every agent interaction through AgentVault generates trust data. Over time, we build verified behavioral profiles — agent trust scores that no competitor can replicate without our scale. Plus network effects: the more agents that integrate, the more valuable the platform becomes for everyone."
+**Say**: "We anchored this in the Feasibility vs. Value matrix from Weekend 1. Every technology we need already exists — OTPs, encrypted vaults, API middleware. What does not exist is anyone combining them for the AI assistant use case. High feasibility, high value. And our moats get stronger over time: trust data that no competitor can replicate, network effects from agent integrations, and compliance certifications that create switching costs."
 
-**Key points**: Data moat from trust scores. Network effects from agent integrations. Becomes the standard.
+**Key points**: Top-right quadrant. Data moat from trust scores. Network effects. Compliance lock-in.
 
 **Transition**: "So here is what we need."
 
 ---
 
-## Slide 8: The Ask
+## Slide 11: The Ask
 
-**Visual**: "$5M Seed Round" in bold. Use of funds breakdown: 50% Engineering, 25% Go-to-Market, 15% Security Audits/Compliance, 10% Operations.
+**Visual**: "$5M Seed" in bold. Use of funds bar — 40% Engineering, 30% Go-to-Market, 20% Security & Compliance, 10% Operations.
 
-**Say**: "We are raising $5 million to build the trust infrastructure that the AI agent era needs. The agents are here. The security is not. We are going to fix that."
+**Say**: "We are raising $5 million to build the consumer privacy layer for the AI era. AI assistants are already in every pocket. The privacy layer is not. We are going to fix that."
 
-**Key points**: Funds go primarily to engineering and GTM. Security audits are critical for credibility in this space.
+**Key points**: Funds split across engineering, GTM, security/compliance, and operations. Security audits are critical for credibility in this space.
 
-**Transition**: Pause. Make eye contact. "AgentVault. The trust layer for the AI agent era."
+**Transition**: Pause. Make eye contact. "AgentVault. Your keys. Your rules. Your AI."
 
 ---
 
-## Slide 9: Thank You / Q&A
+## Q&A Prep
 
-**Visual**: Logo, tagline, contact info, QR code to landing page.
-
-**Say**: Nothing scripted. Open for questions. Have prepared answers for: "Why won't the agent platforms build this themselves?" (Answer: same reason browsers don't build password managers — it's a trust problem that requires an independent third party.) "What about open-source alternatives?" (Answer: enterprises need compliance, audit trails, and support — they pay for that.)
+Have prepared answers for:
+- "Why won't the AI platforms build this themselves?" (Answer: same reason browsers don't build password managers — it's a trust problem that requires an independent third party.)
+- "What about open-source alternatives?" (Answer: consumers need simplicity and trust, enterprises need compliance, audit trails, and support — they pay for that.)
+- "Why consumer-first instead of enterprise-first?" (Answer: consumers adopt faster, create demand from the bottom up, and enterprises follow when their employees are already using it.)
 
 ---
 
